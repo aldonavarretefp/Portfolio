@@ -13,7 +13,7 @@ export default function Intro() {
             showCursor: true, 
             backSpeed:  40,
             typeSpeed:  90,
-            strings: ['Software Developer .','Athlete .', 'Enthusiastic .','future Software Enginner .' ] 
+            strings: ['Software Developer .','Athlete .', 'Enthusiastic .','future Software Engineer .' ] 
         });
     },[])
 
