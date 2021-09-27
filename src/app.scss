@@ -1,0 +1,33 @@
+@import "./global.scss";
+
+.App{
+    height: 100vh;
+    overflow: hidden;
+    main{
+        overflow-y: hidden;
+        .sections{
+            width: 100%;
+            height: calc(100vh - 70px) ; 
+            background-color: powderblue;
+            // position: relative;
+            position: absolute;
+            top:70px;
+            // Scroll Behaviour
+            scroll-snap-type: y mandatory;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            
+            > *{
+                top:70px;
+                width: 100vw;
+                height:  calc(100vh - 70px);
+                scroll-snap-align: start;
+                
+                
+            }
+        }
+    }
+}
