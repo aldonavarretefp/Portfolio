@@ -1,5 +1,4 @@
 
-import { motion } from "framer-motion"; 
 import SkillBox from './../SkillBox/SkillBox';
 
 
