@@ -3,9 +3,20 @@ import { ReactComponent as DealSvg } from '../../icons/undraw_business_deal_cpi9
 import Swal from 'sweetalert2';
 
 import "./contact.scss";
-
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 export default function Contact() {
     const handleSubmit = async (e) => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
         e.preventDefault();
         if(!e.target.email.value){
              const { value:email } = await Swal.fire({
