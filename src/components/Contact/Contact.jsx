@@ -66,7 +66,7 @@ export default function Contact() {
                 <h2>Contact me <span>and let's work together!</span></h2>
                 <form onSubmit={handleSubmit} data-netlify="true" name="contact" method= "POST">
 
-                    <input type="hidden" name="form-name" value= "contact-form" />
+                    <input type="hidden" name="form-name" value= "contact" />
                     <input name="email"type="email" placeholder="Email"/>
                     <textarea name="text" className="form-control" placeholder="Leave your message"/>
                     <button name="submit"type="submit" >Send</button>
