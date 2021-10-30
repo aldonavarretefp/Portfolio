@@ -3,48 +3,48 @@
 .intro{
     background-color: white;
     display: flex;
+    
     @include mobile{
         flex-direction: column;
         align-items: center;
     }
     
-    .left{
-        flex: 0.5;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include mobile{
-            flex:    0.4;       
-        }
-        .imgContainer{
-            width: 400px;
-            height: 400px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            @include mobile{
-                height:200px;
-                width:200px;
-            }
-            img{
-                width:100%;
+    // .left{
+    //     flex: 0.5;
+    //     background-color: white;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     @include mobile{
+    //         flex:    0.4;       
+    //     }
+    //     .imgContainer{
+    //         width: 400px;
+    //         height: 400px;
+    //         overflow: hidden;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: flex-end;
+    //         @include mobile{
+    //             height:200px;
+    //             width:200px;
+    //         }
+    //         img{
+    //             width:100%;
                 
-            }
-        }
-    }
-    .right{
-        flex: 0.5;
+    //         }
+    //     }
+    // }
+    .center{
+        height: 100%;
+        width: 100%;
         background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
-        @include mobile{
-            flex:    0.6;       
-        }
+        
         .wrapper{
             width:100%;
             height: 60%;
@@ -54,7 +54,7 @@
             align-items: center;
             
             h1{
-                font-size:60px;
+                font-size:85px;
                 margin: 10px 0;
                 font-weight: 700;
                 @include mobile{
@@ -63,7 +63,7 @@
                 
             }
             h2{
-                font-size:35px;                
+                font-size:45px;                
                 font-weight: 300;
                 @include mobile{
                     font-size:25px;        
