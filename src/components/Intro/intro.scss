@@ -54,30 +54,31 @@
             align-items: center;
             
             h1{
-                font-size:85px;
+                font-size:80px;
                 margin: 10px 0;
                 font-weight: 700;
+
                 @include mobile{
                     font-size:40px;        
                 }
                 
             }
             h2{
-                font-size:45px;                
+                font-size:50px;;                
                 font-weight: 300;
                 @include mobile{
                     font-size:25px;        
                 }
             }
             h3{
-                font-size:30px;
+                font-size:40px;
                 font-weight: 300;
                 @include mobile{
                     font-size:25px;        
                 }
 
-                span{
-                    font-size:inherit;
+                code{
+                    font-size:40px;
                     color: $mainColor;
                 }
                 .ityped-cursor {

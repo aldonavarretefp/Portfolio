@@ -12,8 +12,8 @@ export default function Intro() {
         init(textRef.current, { 
             showCursor: true, 
             backSpeed:  40,
-            typeSpeed:  90,
-            strings: ['Software Developer .','Athlete .', 'Enthusiastic .','future Software Engineer .' ] 
+            typeSpeed:  40,
+            strings: ['happy to see you here!.','a software developer.','an athlete.', 'an enthusiastic.','a future software engineer.','a student.','an autodidact.' ] 
         });
     },[])
 
@@ -25,7 +25,7 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hi everybody! I'm</h2>
                     <h1>Aldo Navarrete,</h1>
-                    <h3>a simple <span ref={textRef}></span></h3>
+                    <h3>and I am <code ref={textRef}></code></h3>
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down-arrow.png" alt="Flecha_abajo" />
