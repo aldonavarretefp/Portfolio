@@ -1,38 +1,41 @@
 @import "../../global.scss";
 
 .contact{
-    background-color: lightblue;
     display: flex;
+    background-color: white;
     @include mobile{
         flex-direction: column;
     }
     .left{
-        flex:1;
+        flex:0.6;
         overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .icon{
-            width:100%;
-            height:100%;
+            width:80%;
+            height:80%;
         }
 
     }
     .right{
-        flex:1;
+        flex:0.4;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
-        text-justify: inter-word;
+        text-align: left;
         h2{
-            font-size:70px;
+            font-size:50px;
             margin: 10px 0;
             font-weight: 700;
-            margin: 0px 100px 0px 100px;
+            width: 70%;
+            text-align: right;
             @include mobile{
                 display:none;
             }
             span{
-                font-size: 45px   ;
+                font-size: 40px;
                 font-weight: 300;
                 @include mobile{
                     font-size: 20px;
@@ -44,53 +47,121 @@
             width:70%;
             height:70%;
             display: flex;
+            padding: 20px;
             flex-direction: column;
             justify-content: center;
             align-items:center;
             box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            background:linear-gradient(90deg, #add8e6 0%, rgb(193, 223, 226) 100%);
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+
+            border-radius: 10px;
             @include mobile{
                 width: 80%;
                 height: 80%;
             }
             input{
-                width:300px;
+                width:80%;
                 height:30px;
                 font-size:15px;
                 border-radius: 5px;
                 @include mobile{
-                    width: 150px;
+                    width: 80%;
                     height: 35px;
                 }
             }
             textarea{
                 height:300px;
-                width:300px;
+                width:80%;
                 margin:20px 0px 20px 0px;
                 border: rgba(0, 0, 0, 0.8);
                 border-radius: 5px;
                 @include mobile{
-                    width: 150px;
+                    width: 80%;
                     height: 150px;
                     margin-bottom: 10px;
                     margin-top:10px;
                 }
             }
             button{
-                width:150px;
-                height: 30px;
+                width:80%;
+                height: 40px;
                 color:white;
                 background-color: $mainColor;
                 border-radius: 10px;
                 cursor: pointer;
                 border: none;
+
+                font-size: 20px;
                 @include mobile{
                     margin-top: 0;
                 }
                 &:focus{
                     outline: none;
                 }
+
             }
+            
+            // button {
+            //     padding: 20px 50px;
+            //     font-size: 1.5rem;
+            //     cursor: pointer;
+            //     border: 0px;
+            //     background: transparent;
+            //     position: relative;
+            //     margin: 20px;
+            //     transition: all .25s ease;
+            // }
+            // .btn-2 {
+            //     background: #000;
+            //     color: #fff;
+            //     border-radius: 30px;
+            //     transition: all .25s ease;
+            // }
+            // .btn-2::after,.btn-2::before {
+            //     content: '';
+            //     position: absolute;
+            //     opacity: .3;
+            //     background: #000;
+            //     border-radius: inherit;
+            //     width: 100%;
+            //     height: 100%;
+            //     left: 0px;
+            //     bottom: 0px;
+            //     z-index: -1;
+            //     transition: all .25s ease;
+            // }
+            // .btn-2:hover {
+            //     transform: translate(-12px, -12px);
+            // }
+            // .btn-2:hover:after {
+            //     transform: translate(6px, 6px);
+            // }
+            // .btn-2:hover:before {
+            //     transform: translate(12px, 12px);
+            // }
+            // .btn-5:hover {
+            //     color: rgb(7, 5, 5);
+            // }
+            // .btn-5:hover::after {
+            //     transform: scale(1);
+            //     opacity: 1;
+            // }
+            // .btn-5::after {
+            //     content: '';
+            //     width: 100%;
+            //     height: 100%;
+            //     border-radius: 30px;
+            //     position: absolute;
+            //     top: 0px;
+            //     left: 0px;
+            //     transform: scale(.1);
+            //     background: #000;
+            //     z-index: -1;
+            //     opacity: 0;
+            //     transition: all .25s ease;
+            // }
             
 
         }

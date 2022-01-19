@@ -32,7 +32,23 @@ export const FrontendPortfolio = [
         weblink:"",
         githubLink: "",
         description: "A business landing page using ReactJS."
-    }
+    },
+    {
+        id:2,
+        title: "Heroes React App",
+        img:"assets/HeroesApp.png",
+        weblink:"https://condescending-snyder-570e07.netlify.app/",
+        githubLink: "https://github.com/aldonavarretefp/Heros-App.git",
+        description: "React Application using React Hooks and React router-dom."
+    },
+    {
+        id:3,
+        title: "Gif Expert App",
+        img:"assets/GifSearch.gif",
+        weblink:"https://aldonavarretefp.github.io/Git-Expert-App/",
+        githubLink: "https://github.com/aldonavarretefp/Git-Expert-App",
+        description: "A simple Gif Search App using React Hooks."
+    },
 ];
 
 export const Skills = [
@@ -59,5 +75,37 @@ export const Skills = [
     {
         name:"terminal",
         url: "https://www.pikpng.com/pngl/b/216-2162617_terminal-logo-svg-clipart.png"
+    },
+    {
+        name:"git",
+        url: "https://mercedesdavila.github.io/img/git.png"
+    },
+    {
+        name:"html",
+        url: "https://cdn-icons-png.flaticon.com/512/121/121537.png"
+    },
+    {
+        name:"css",
+        url: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"
+    },
+    {
+        name:"sass",
+        url: "https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
+    },
+    {
+        name:"node",
+        url: "https://media.bitdegree.org/storage/media/images/2018/12/node-js-interview-questions-logo-2-266x300.png"
+    },
+    {
+        name:"express",
+        url: "https://e7.pngegg.com/pngimages/925/447/png-clipart-express-js-node-js-javascript-mongodb-node-js-text-trademark.png"
+    },
+    {
+        name:"mongodb",
+        url: "https://cdn.icon-icons.com/icons2/2699/PNG/512/mongodb_logo_icon_170943.png"
+    },
+    {
+        name:"react",
+        url: "https://ionicframework.com/docs/icons/logo-react-icon.png"
     }
 ];

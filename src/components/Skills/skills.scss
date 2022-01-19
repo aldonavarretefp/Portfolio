@@ -7,7 +7,7 @@
         flex-direction: column;
     }
     .left{
-        flex: 0.5;
+        flex: 0.4;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -15,9 +15,6 @@
         align-items: center;
         text-align: justify;
         text-justify: inter-word;  
-        @include mobile{
-            flex: 0.4;
-        } 
         .imgContainer{
             width: 400px;
             height: 400px;
@@ -55,7 +52,7 @@
         }
     }
     .right{
-        flex: 0.5;
+        flex: 0.6;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -63,7 +60,6 @@
         align-items: center;
         position: relative;
         @include mobile{
-            flex: 0.6;
             overflow: hidden;
         } 
     }

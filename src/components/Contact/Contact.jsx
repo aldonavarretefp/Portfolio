@@ -3,11 +3,13 @@ import { ReactComponent as DealSvg } from '../../icons/undraw_business_deal_cpi9
 import Swal from 'sweetalert2';
 
 import "./contact.scss";
+
+
 const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
-  }
+}
 export default function Contact() {
     const handleSubmit = async (e) => {
         fetch("/", {
@@ -19,7 +21,7 @@ export default function Contact() {
         .catch(error => alert(error));
         e.preventDefault();
         if(!e.target.email.value){
-             const { value:email } = await Swal.fire({
+            const { value:email } = await Swal.fire({
                 title: 'Email is missing!',
                 input: 'email',
                 inputLabel: 'Your email address',
@@ -36,7 +38,7 @@ export default function Contact() {
                 inputLabel: 'Your message is missing...!',
                 inputPlaceholder: 'Type your message here...',
                 inputAttributes: {
-                  'aria-label': 'Type your message here'
+                    'aria-label': 'Type your message here'
                 },
                 showCancelButton: true
             });
@@ -65,11 +67,10 @@ export default function Contact() {
             <div className="right">
                 <h2>Contact me <span>and let's work together!</span></h2>
                 <form onSubmit={handleSubmit} data-netlify="true" name="contact" method= "POST">
-
                     <input type="hidden" name="form-name" value= "contact" />
                     <input name="email"type="email" placeholder="Email"/>
                     <textarea name="text" className="form-control" placeholder="Leave your message"/>
-                    <button name="submit"type="submit" >Send</button>
+                    <button className="btn-5" name="submit"type="submit" >Send</button>
                 </form>
             </div>
         </div>

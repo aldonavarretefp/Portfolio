@@ -5,9 +5,9 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    
+
     @include mobile{
-        > h1,li{
+        h1,li{
             overflow: hidden;
         }
     }
@@ -22,10 +22,8 @@
     }
     ul{
         margin: 20px 0px 30px 0px;
-        padding: 0;
         list-style: none;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         @include mobile{
             height:40px;
@@ -43,7 +41,6 @@
             width:100%;
         }
         .item{
-            transition: all 0.2s ease-in-out;
             width: 400px;
             height:200px;
             display: flex;
@@ -54,6 +51,8 @@
             border: 1px solid rgb(168, 168, 168);
             color: white;
             position: relative;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
             @include mobile{
                 width: 300px;
                 height:140px;
@@ -76,29 +75,28 @@
                 object-fit:cover;
                 z-index: 1;
             }
-            > h3,p{
+            h3,p{
                 position:absolute;
                 text-align: justify;
-                text-justify: inter-word;
-                margin-right: 5px; 
-                margin-left: 5px;
-                
             }
             h3{
-                top:20%;
+                top:5%;
                 font-size:22px;
                 font-weight: 300;
+                margin: 20px 40px;
+                margin-bottom: 50px;
                 @include mobile{
                     font-size: 15px;
-                    top:10%;
+                    top:0px;
                     
                 }
             }
             p{
-                top:45%;  
-                font-size: 18px;
+                font-size: 20x;
+                margin: 0px 40px 0px 40px;
                 @include mobile{
-                    font-size: 10px;
+                    font-size: 12px;
+                    margin-top: 10px;
                 }
             }
             .links{

@@ -15,7 +15,7 @@ export default function TopBar({isOpen,setOpen}) {
         <div className={isOpen ? "topBar active" : "topBar"}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">Aldo</a> 
+                    <a href="#intro" className="logo">Aldo <code>Navarrete</code> </a> 
                     <div className="itemContainer">
                         <EmailIcon className="icon"/>
                         <span>nazamaldoyael@gmail.com</span>
