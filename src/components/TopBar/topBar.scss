@@ -27,18 +27,29 @@
             align-items:center;
             @include mobile{
                 justify-content: space-between;
+                span{
+                    display:none;    
+                }
+                .logo{
+                    margin:0px;
+                    font-size: 1.5rem;
+                }
+            }
+            
+            span{
+                margin: 0 0.5rem;
+            }
+            a{
+                text-decoration: none;
+                margin-right: 0.5rem;
+                color: inherit;
             }
             .logo{
-                font-size:25px;
+                font-size: 2rem;
                 font-weight:600;
                 text-decoration: none;
-                //Agarra el color del pariente fierro
                 color: inherit;
                 margin-right: 30px;
-                @include mobile{
-                    margin:0px;
-                    font-size: 15px;
-                }
             }
             #iconContainer{
                 display: flex;
@@ -53,9 +64,9 @@
             .itemContainer {
                 display:flex;
                 align-items: center;
-                margin-left: 20px;
                 @include mobile{
                     display:none;
+
                 }
                 a{
                     display: flex;
@@ -64,6 +75,7 @@
                     margin: 0;
                     padding: 0;
                     color: inherit;
+                    text-decoration: none;
                 }
                 .icon{
                     font-size:25px;
@@ -71,14 +83,24 @@
                     display: flex;
                     justify-content:center;
                     align-items:center;
-                }
-                #icon{
-                    display: flex;
-                    justify-content:center;
-                    align-items:center;
+                    transition: color 0.3s ease-in-out,
+                                font-size 0.3s ease-in-out,
+                                transform 0.3s ease-in-out;
+                    //while hover 
+                    &:hover{
+                        color: red;
+                        font-size: 27px;
+                        transform: translateY(-5px);
+
+                    }
                 }
                 #linkedInIcon{
                     font-size:33px;
+                    &:hover{
+                        color: red;
+                        font-size: 34px;
+                        transform: translateY(-5px);
+                    }
                 }
                 
                 span{
