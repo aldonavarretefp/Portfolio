@@ -35,8 +35,9 @@ export default function Contact() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
-        })
+            body: encode({ "form-name": "contact", ...formValues})
+        }).then(console.log('Form Submitted!'))
+            .catch(error => console.log(error));
         // if(!e.target.email.value){
         //     const { value:email } = await Swal.fire({
         //         title: 'Email is missing!',
