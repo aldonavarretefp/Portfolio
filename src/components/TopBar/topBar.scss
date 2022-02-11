@@ -32,7 +32,7 @@
                 }
                 .logo{
                     margin:0px;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
             }
             
@@ -88,18 +88,18 @@
                                 transform 0.3s ease-in-out;
                     //while hover 
                     &:hover{
-                        color: red;
+                        color: rgb(6, 82, 105);
                         font-size: 27px;
-                        transform: translateY(-5px);
-
+                        transform: translateY(-2px);
+                        
                     }
                 }
                 #linkedInIcon{
                     font-size:33px;
                     &:hover{
-                        color: red;
+                        color: rgb(6, 82, 105);
                         font-size: 34px;
-                        transform: translateY(-5px);
+                        transform: translateY(-2px);
                     }
                 }
                 
