@@ -32,14 +32,11 @@ export default function Contact() {
 
 
 
-        // fetch("/", {
-        //     method: "POST",
-        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        //     body: encode({ "form-name": "contact", ...this.state })
-        // })
-        // .then(() => alert("Success!"))
-        // .catch(error => alert(error));
-        // e.preventDefault();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
         // if(!e.target.email.value){
         //     const { value:email } = await Swal.fire({
         //         title: 'Email is missing!',
