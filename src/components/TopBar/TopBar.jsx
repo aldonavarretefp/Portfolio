@@ -17,9 +17,9 @@ export default function TopBar({isOpen,setOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Aldo <code>Navarrete</code> </a>
-                    <a href="/files/aldo-navarrete-resume.pdf" target="_blank" rel='noopener noreferrer' ><span>CV</span></a>
+                    <a href="/files/aldonavarrete-resume.pdf" target="_blank" rel='noopener noreferrer' ><span>CV</span></a>
                     <div className="itemContainer">
-                        <a href="/files/aldo-navarrete-resume.pdf" without target="_blank" rel='noopener noreferrer' >
+                        <a href="/files/aldonavarrete-resume.pdf" without target="_blank" rel='noopener noreferrer' >
                             <DescriptionIcon className="icon" />
                         </a>
                     </div>
