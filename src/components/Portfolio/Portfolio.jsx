@@ -1,8 +1,8 @@
 
 import { useState, useEffect } from 'react';
 
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LanguageIcon from '@material-ui/icons/Language';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
 
 
 import PortfolioList from "../PortfolioList/PortfolioList";

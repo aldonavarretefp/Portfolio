@@ -1,9 +1,9 @@
 
-import EmailIcon from '@material-ui/icons/Email';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import DescriptionIcon from '@material-ui/icons/Description';
+import EmailIcon from '@mui/icons-material/Email';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import DescriptionIcon from '@mui/icons-material/Description';
 import { Sling as Hamburger } from 'hamburger-react'
 
 
@@ -17,9 +17,9 @@ export default function TopBar({isOpen,setOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Aldo <code>Navarrete</code> </a>
-                    <a href="/files/aldonavarrete-resume.pdf" target="_blank" rel='noopener noreferrer' ><span>CV</span></a>
+                    <a href="/files/aldo-navarrete-resume.pdf" target="_blank" rel='noopener noreferrer' ><span>CV</span></a>
                     <div className="itemContainer">
-                        <a href="../files/aldonavarrete-resume.pdf" without target="_blank" rel='noopener noreferrer' >
+                        <a href="../files/aldo-navarrete-resume.pdf" without target="_blank" rel='noopener noreferrer' >
                             <DescriptionIcon className="icon" />
                         </a>
                     </div>
