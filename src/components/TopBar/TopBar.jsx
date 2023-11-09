@@ -44,7 +44,7 @@ export default function TopBar({isOpen,setOpen}) {
                             </a>
                     </div>
                             <div className="itemContainer">
-                                <a  rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/aldo-navarrete-zamora-756bb3200/">
+                                <a  rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/navarretealdo/">
                                     <LinkedInIcon className="icon" id="linkedInIcon"/>
                                 </a>
                             </div>
